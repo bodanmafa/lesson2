@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document1</title>
+<style>
+		html {
+			font-size: 25px;
+		}
+		form {
+			font-size: 40px;
+		}
+		input, label, legend {
+			font-size: 40px
+		}
+	</style>
+</head>
+<body>
+	<form action="http://localhost:3000/form" method="get">
+		<fieldset>
+			<legend> Зарегестрировать машину</legend>
+			<div>
+				<label for="mark">Марка</label>
+				<input name="mark" type="text" placeholder="Введите марку..." id="mark">
+			</div>
+			<div>
+				<label for="model">Модель</label>
+				<input name="model" type="text" placeholder="Введите модель..." id="model">
+			</div>
+			<div>
+				<label for="age">Возраст</label>
+				<input name="age" type="number" min="0" placeholder="Сколько лет?" id="age">
+			</div>
+			<div>
+				<label for="color">Цвет</label>
+				<input name="color" type="color" id="color">
+			</div>
+			<div>
+				<label for="email">Почта</label>
+				<input name="email" type="email" placeholder="Введите email..." id="email">
+			</div>
+			<div>
+				<label for="number">Номер телефона</label>
+				<input name="number" type="number" placeholder="Введите номер телефона..." id="number">
+			</div>
+			<div>
+				<label for="agree">Подтвердить</label>
+				<input type="checkbox" id="agree" required>
+			</div>
+			<button>Отправить</button>
+		</fieldset>
+	</form>
+</body>
+</html>
